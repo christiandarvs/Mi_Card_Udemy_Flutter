@@ -10,10 +10,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
         backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Container(
+            color: Colors.white,
+            height: 200,
+            width: 200,
+            alignment: Alignment.center,
+            margin: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
+            child: const Text('Hello World!'),
+          ),
+        ),
       ),
     );
   }
