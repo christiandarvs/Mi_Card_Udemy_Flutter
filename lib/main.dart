@@ -12,16 +12,14 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            color: Colors.white,
-            height: 200,
-            width: 200,
-            alignment: Alignment.center,
-            margin: const EdgeInsets.all(20),
-            padding: const EdgeInsets.all(20),
-            child: const Text('Hello World!'),
-          ),
-        ),
+            child: Column(
+          children: const [
+            CircleAvatar(
+              radius: 60.0,
+              backgroundImage: AssetImage('images/IMG_20220908_150825_008.jpg'),
+            )
+          ],
+        )),
       ),
     );
   }
