@@ -64,9 +64,9 @@ class MyApp extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(
                       horizontal: 20.0, vertical: 15.0),
                   child: ListTile(
-                    leading: const Icon(
+                    leading: Icon(
                       Icons.email,
-                      color: Colors.teal,
+                      color: Colors.teal.shade100,
                     ),
                     title: Text(
                       'myacc@gmail.com',
